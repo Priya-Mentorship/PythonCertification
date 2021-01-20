@@ -5,3 +5,6 @@ print(c.values())
 print(c.items())
 for a,b in c.items():
     print(a,b)
+
+c['hey']=c["hey"]+20
+print(c)    

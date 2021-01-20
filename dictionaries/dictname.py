@@ -1,9 +1,10 @@
-c =dict()
-names =['a','b','c']
+count =dict()
+names =['a','b','c','a','b','c','a','b','c']
+#print(names['a'])
 for name in names:
-    if name not in c:
-        c[name]=1
+    if name not in count:
+        count[name]=1
     else:
-        c[name]=c[name]+1    
-print(c[name])
-print(c.get('a',0))
+        count[name]=count[name]+1    
+print(count[name])
+print(count.get('a',0))
