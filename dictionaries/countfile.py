@@ -3,10 +3,10 @@ handle = open("/Users/vishnupriya/Desktop/GitProjects/PythonCertification/dictio
 counts = dict()
 for line in handle:
     words = line.split()
-    # print(words)
+    print(words)
     for word in words:
         counts[word] = counts.get(word,0)+1
-        # print(word)
+print(counts)
 
 bigcount = None
 bigword = None
@@ -15,3 +15,5 @@ for word,count in counts.items():
         bigword = word
         bigcount = count
 print(bigword,bigcount)
+
+
