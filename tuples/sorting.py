@@ -1,5 +1,5 @@
 c=dict({'z':155,'a':200,'c':11})
 t=c.items()
-print(sorted(t))    
+# print(sorted(t,reverse=True))    
 for a,b in sorted(c.items(),reverse=True):
-    print(a,b)
+    print(b,a)

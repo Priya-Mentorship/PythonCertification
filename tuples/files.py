@@ -3,14 +3,16 @@ handle = open("/Users/vishnupriya/Desktop/GitProjects/PythonCertification/dictio
 counts = dict()
 for line in handle:
     words = line.split()
-    # print(words)
+    #print(words)
     for word in words:
         counts[word] = counts.get(word,0)+1
-        # print(word)
+        #print(word)
+        #print(counts)
 lst = list()
 for k,v in counts.items():
     newtup = (v,k)
     lst.append(newtup)  
 lst = sorted(lst,reverse=True)
+print(lst)
 for val,key in lst[:10]:
     print(key,val)
